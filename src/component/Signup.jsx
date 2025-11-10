@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';  // <-- corrected import
 
 function Signup() {
   const [name, setName] = useState("");
@@ -6,16 +7,21 @@ function Signup() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  const navigate = useNavigate();  // <-- get navigate function
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
       alert("Passwords do not match");
       return;
     }
-    // Add your signup logic here
     alert(`Signing up with Name: ${name}, Email: ${email}`);
+
+    // Use navigate to programmatically change route
+    navigate("/Home");   // Use the route path, not file path
   };
 
+  // ... your form JSX here
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
