@@ -116,6 +116,9 @@ export default function NavbarPrivate() {
           <a href="./profile" className="flex items-center space-x-2 hover:text-blue-600">
             <User size={18} className="text-blue-600" /> <span>Profile</span>
           </a>
+          <Link to="/home" className="hover:text-blue-600">Home</Link>
+<Link to="/availablejob" className="hover:text-blue-600">Available Jobs</Link>
+<Link to="/salary" className="hover:text-blue-600">Salary</Link>
           <a
             href="/jobpost"
             className="block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-center"
