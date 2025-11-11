@@ -18,8 +18,9 @@ import AboutPage from './component/Aboutpage';
 import Help from './component/Help';
 import Popularjob from './component/Popularjob';
 import Availablejob from './component/Availablejob';
-// import Apnavbar from './component/Apnavbar';
-import Navbarprivate from './component/Navbarprivate';
+import Apnavbar from './component/Apnavbar';
+// import Navbarprivate from './component/Navbarprivate';
+import EmployeerIndexpage from './employeerDashboard/EmployeerIndexpage';
 
 
 
@@ -62,8 +63,9 @@ const router = createBrowserRouter(
     {path: '/jobpost',
      element: 
      <div>
-      <Navbarprivate/>
-      <Jobpost/>
+      {/* <Navbarprivate/> */}
+      <Apnavbar/>
+      <EmployeerIndexpage/>
      </div>
     },
 
@@ -71,7 +73,9 @@ const router = createBrowserRouter(
      path: '/salary',
      element:
      <div>
-      <Navbarprivate/>
+      {/* <Navbarprivate/> */}
+            <Apnavbar/>
+
       <Salary/>
      </div>
     },
@@ -80,7 +84,9 @@ const router = createBrowserRouter(
     path: '/companyreview',
     element:
     <div>
-      <Navbarprivate/>
+      {/* <Navbarprivate/> */}
+            <Apnavbar/>
+
       <Companyreview/>
     </div>
   },
@@ -89,7 +95,8 @@ const router = createBrowserRouter(
     path: '/browsecompany',
     element:
     <div>
-      <Navbarprivate/>
+      {/* <Navbarprivate/> */}
+      <Apnavbar/>
       <Browsecompany/>
     </div>
   },
@@ -98,7 +105,8 @@ const router = createBrowserRouter(
     path: '/popularjob',
     element:
     <div>
-      <Navbarprivate/>
+      {/* <Navbarprivate/> */}
+      <Apnavbar/>
       <Popularjob/>
     </div>
   },
@@ -107,7 +115,8 @@ const router = createBrowserRouter(
     path: '/careeradvice',
     element:
     <div>
-      <Navbarprivate/>
+      {/* <Navbarprivate/> */}
+      <Apnavbar/>
       <Careeradvice/>
     </div>
   },
@@ -116,7 +125,8 @@ const router = createBrowserRouter(
     path: '/help',
     element:
     <div>
-      <Navbarprivate/>
+      {/* <Navbarprivate/> */}
+      <Apnavbar/>
       <Help/>
     </div>
   },
@@ -125,7 +135,8 @@ const router = createBrowserRouter(
     path: '/aboutpage',
     element:
     <div>
-      <Navbarprivate/>
+      {/* <Navbarprivate/> */}
+      <Apnavbar/>
       <AboutPage/>
     </div>
   },
@@ -134,7 +145,22 @@ const router = createBrowserRouter(
     path: '/availablejob',
     element:
     <div>
-      <Navbarprivate/>
+      {/* <Navbarprivate/> */}
+      <Apnavbar/>
+      <Availablejob/>
+    </div>
+  },
+
+
+
+  //EmployeerPaths.......
+
+  {
+    path: '/employeerIndexpage',
+    element:
+    <div>
+      {/* <Navbarprivate/> */}
+      <Apnavbar/>
       <Availablejob/>
     </div>
   },

@@ -102,8 +102,10 @@
 // export default Login;
 
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Home from './Home';
+import { AuthContext } from "./AuthContext";
+
 
 const HARDCODED_EMAIL = "abcd@gmail.com";
 const HARDCODED_PASSWORD = "abcd";
@@ -114,11 +116,19 @@ function Login() {
   const [error, setError] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  const { login } = useContext(AuthContext);
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email === HARDCODED_EMAIL && password === HARDCODED_PASSWORD) {
-      setIsLoggedIn(true);
+      
       setError("");
+
+      localStorage.setItem("authToken", "manual-token-value");
+      setIsLoggedIn(true);
+      login("manual-token-value");
+
       // You would redirect or update context here if needed
     } else {
       setError("Invalid email or password.");
@@ -126,6 +136,7 @@ function Login() {
   };
 
   if (isLoggedIn) {
+    
     return (
       // // <div className="min-h-screen flex flex-col items-center justify-center bg-green-100">
       // //   <h1 className="text-2xl font-bold text-green-800 mb-4">Successfully Logged In!</h1>
@@ -231,3 +242,43 @@ function Login() {
 }
 
 export default Login;
+
+
+
+
+
+
+// import React, { useState, useContext } from 'react';
+// import Home from './Home';
+// import { AuthContext } from './AuthContext';
+
+// const HARDCODED_EMAIL = "abcd@gmail.com";
+// const HARDCODED_PASSWORD = "abcd";
+
+// function Login() {
+//   const { isLoggedIn, login } = useContext(AuthContext);
+//   const [email, setEmail] = useState("");
+//   const [password, setPassword] = useState("");
+//   const [error, setError] = useState("");
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     if (email === HARDCODED_EMAIL && password === HARDCODED_PASSWORD) {
+//       setError("");
+//       login("manual-token-value");  // Update global state and localStorage
+
+//     } else {
+//       setError("Invalid email or password.");
+//     }
+//   };
+
+//   if (isLoggedIn) {
+//     return <Home />;
+//   }
+
+//   return (
+//     // Your existing login form JSX here, unchanged except using this handleSubmit
+//   );
+// }
+
+// export default Login;

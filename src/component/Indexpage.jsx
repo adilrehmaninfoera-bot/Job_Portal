@@ -1,5 +1,5 @@
-// import Apnavbar from "../component/Apnavbar";
-import Navbarprivate from "./Navbarprivate";
+import Apnavbar from "../component/Apnavbar";
+// import Navbarprivate from "./Navbarprivate";
 import bgimage from"../assets/bgimg.png";
 import Hero from "../component/Hero";
 import Featuredjobs from "../component/Featuredjobs";
@@ -16,7 +16,8 @@ export default function Indexpage() {
         style={{ backgroundImage: `url(${bgimage})` }}
       >
     <div className="min-h-screen flex flex-col">
-      <Navbarprivate/>
+      {/* <Navbarprivate/> */}
+      <Apnavbar/>
       <main className="flex-grow">
         <Hero />
         <Products/>
