@@ -13,3 +13,12 @@
 background-image: url('./assets/bannerimg.png');
 width:auto;
 }
+
+.employer-image {
+  background-image: url('./assets/Employerimage.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;      /* use full viewport height */
+  opacity: 0.9;       /* use decimal for opacity, not percentage */
+}

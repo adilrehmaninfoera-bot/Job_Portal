@@ -1,183 +1,187 @@
-import React from 'react'
+import React from "react";
 // import { BrowserRouter } from 'react-router-dom'
 // import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Indexpage from "./component/Indexpage"; 
-// import Navbar from './component/Navbar';
-
-import Home from './component/Home';
-import Login from './component/Login';
-import Signup from './component/Signup';
-import Jobpost from './component/Jobpost';
-import Companyreview from './component/Companyreview';
-import Salary from './component/Salary';
-import Browsecompany from './component/Browsecompany';
-import Careeradvice from './component/Careeradvice';
-import AboutPage from './component/Aboutpage';
-import Help from './component/Help';
-import Popularjob from './component/Popularjob';
-import Availablejob from './component/Availablejob';
-import Apnavbar from './component/Apnavbar';
+import Indexpage from "./component/Indexpage";
+import Home from "./component/Home";
+import Login from "./component/Login";
+import Signup from "./component/Signup";
+// import Jobpost from "./component/Jobpost";
+import Companyreview from "./component/Companyreview";
+import Salary from "./component/Salary";
+import Browsecompany from "./component/Browsecompany";
+import Careeradvice from "./component/Careeradvice";
+import AboutPage from "./component/Aboutpage";
+import Help from "./component/Help";
+import Popularjob from "./component/Popularjob";
+import Availablejob from "./component/Availablejob";
+import Apnavbar from "./component/Apnavbar";
 // import Navbarprivate from './component/Navbarprivate';
-import EmployeerIndexpage from './employeerDashboard/EmployeerIndexpage';
+import EmployerIndexpage from "./EmployeerDashboard/EmployerIndexpage";
+import EmployerNavbar from "./EmployeerDashboard/EmployerNavbar";
+import EmployerDashboardpage from "./EmployeerDashboard/EmployerDashboardpage";
 
-
-
-
-
-
-const router = createBrowserRouter(
-  [
-
-  {path: '/',
-    element: 
-    <div>
-      <Indexpage/>
-    </div>
-  },
-
-    { path: '/login',
-      element: 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
       <div>
-      <Login/>
+        <Indexpage />
       </div>
-    },
-    
-   { path: '/signup',
-      element: 
+    ),
+  },
+
+  {
+    path: "/login",
+    element: (
       <div>
-      <Signup/>
+        <Login />
       </div>
-    },
-    
-
-    {path: '/home',
-     element: 
-     <div>
-      
-      <Home/>
-     </div>
-    },
- 
-    {path: '/jobpost',
-     element: 
-     <div>
-      {/* <Navbarprivate/> */}
-      <Apnavbar/>
-      <EmployeerIndexpage/>
-     </div>
-    },
-
-    {
-     path: '/salary',
-     element:
-     <div>
-      {/* <Navbarprivate/> */}
-            <Apnavbar/>
-
-      <Salary/>
-     </div>
-    },
-
-  {
-    path: '/companyreview',
-    element:
-    <div>
-      {/* <Navbarprivate/> */}
-            <Apnavbar/>
-
-      <Companyreview/>
-    </div>
-  },
-   
-   {
-    path: '/browsecompany',
-    element:
-    <div>
-      {/* <Navbarprivate/> */}
-      <Apnavbar/>
-      <Browsecompany/>
-    </div>
-  },
-
-   {
-    path: '/popularjob',
-    element:
-    <div>
-      {/* <Navbarprivate/> */}
-      <Apnavbar/>
-      <Popularjob/>
-    </div>
+    ),
   },
 
   {
-    path: '/careeradvice',
-    element:
-    <div>
-      {/* <Navbarprivate/> */}
-      <Apnavbar/>
-      <Careeradvice/>
-    </div>
-  },
-
-   {
-    path: '/help',
-    element:
-    <div>
-      {/* <Navbarprivate/> */}
-      <Apnavbar/>
-      <Help/>
-    </div>
-  },
-
-   {
-    path: '/aboutpage',
-    element:
-    <div>
-      {/* <Navbarprivate/> */}
-      <Apnavbar/>
-      <AboutPage/>
-    </div>
+    path: "/signup",
+    element: (
+      <div>
+        <Signup />
+      </div>
+    ),
   },
 
   {
-    path: '/availablejob',
-    element:
-    <div>
-      {/* <Navbarprivate/> */}
-      <Apnavbar/>
-      <Availablejob/>
-    </div>
+    path: "/home",
+    element: (
+      <div>
+        <Home />
+      </div>
+    ),
   },
 
+  
 
+  {
+    path: "/salary",
+    element: (
+      <div>
+        {/* <Navbarprivate/> */}
+        <Apnavbar />
+        <Salary />
+      </div>
+    ),
+  },
+
+  {
+    path: "/companyreview",
+    element: (
+      <div>
+        {/* <Navbarprivate/> */}
+        <Apnavbar />
+        <Companyreview />
+      </div>
+    ),
+  },
+
+  {
+    path: "/browsecompany",
+    element: (
+      <div>
+        {/* <Navbarprivate/> */}
+        <Apnavbar />
+        <Browsecompany />
+      </div>
+    ),
+  },
+
+  {
+    path: "/popularjob",
+    element: (
+      <div>
+        {/* <Navbarprivate/> */}
+        <Apnavbar />
+        <Popularjob />
+      </div>
+    ),
+  },
+
+  {
+    path: "/careeradvice",
+    element: (
+      <div>
+        {/* <Navbarprivate/> */}
+        <Apnavbar />
+        <Careeradvice />
+      </div>
+    ),
+  },
+
+  {
+    path: "/help",
+    element: (
+      <div>
+        {/* <Navbarprivate/> */}
+        <Apnavbar />
+        <Help />
+      </div>
+    ),
+  },
+
+  {
+    path: "/aboutpage",
+    element: (
+      <div>
+        {/* <Navbarprivate/> */}
+        <Apnavbar />
+        <AboutPage />
+      </div>
+    ),
+  },
+
+  {
+    path: "/availablejob",
+    element: (
+      <div>
+        {/* <Navbarprivate/> */}
+        <Apnavbar />
+        <Availablejob />
+      </div>
+    ),
+  },
 
   //EmployeerPaths.......
 
-  {
-    path: '/employeerIndexpage',
-    element:
-    <div>
-      {/* <Navbarprivate/> */}
-      <Apnavbar/>
-      <Availablejob/>
-    </div>
+ {
+    path: "/employerIndexpage",
+    element: (
+      <div>
+        {/* <Navbarprivate/> */}
+        <EmployerIndexpage />
+      </div>
+    ),
   },
-  ]
-)
 
+  {
+    path: "/employerNavbar",
+    element: (
+      <div>
+        <EmployerNavbar />
+      </div>
+    ),
+  },
 
+  {
+    path: "/employerDashboardpage",
+    element: (
+      <div>
+        <EmployerDashboardpage />
+      </div>
+    ),
+  },
+]);
 
-
-
-              
 function App() {
-  return (
-
-     <RouterProvider router = {router} />
-
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

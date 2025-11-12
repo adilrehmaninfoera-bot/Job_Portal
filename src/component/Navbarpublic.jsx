@@ -12,7 +12,7 @@ export default function NavbarPublic() {
         {/* Left side menu */}
         <div className="hidden md:flex space-x-16">
           <a href="/home" className="hover:text-blue-600">Home</a>
-          <a href="./Availablejob.jsx" className="hover:text-blue-600">Available Jobs</a>
+          <a href="./Availablejob" className="hover:text-blue-600">Available Jobs</a>
           <a href="/salary" className="hover:text-blue-600">Salary</a>
         </div>
 
@@ -20,7 +20,7 @@ export default function NavbarPublic() {
         <div className="hidden md:flex items-center space-x-4">
           <a href="/login" className="hover:text-blue-600 font-medium">Login</a>
           <a
-            href="/jobpost"
+            href="/EmployerIndexpage"
             className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
           >
             Post a Job

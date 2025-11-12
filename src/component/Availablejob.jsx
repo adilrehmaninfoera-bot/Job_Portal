@@ -22,7 +22,7 @@ const popularCities = [
   "Pune",
 ];
 
-const JobSearchSection = () => {
+const Availablejob= () => {
   return (
     <>
      <div
@@ -93,4 +93,4 @@ const JobSearchSection = () => {
   );
 };
 
-export default JobSearchSection;
+export default Availablejob;
