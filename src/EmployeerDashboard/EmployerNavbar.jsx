@@ -36,7 +36,7 @@ export default function EmployerNavbar() {
             Login
           </Link> */}
           <Link
-            to="/signup"
+            to="/EmployerDashboardpage"
             className="bg-blue-400 text-white px-5 py-2 rounded-lg hover:bg-blue-500 transition"
           >
             Dashboard

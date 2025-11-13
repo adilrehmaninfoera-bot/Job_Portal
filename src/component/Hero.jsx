@@ -1,7 +1,7 @@
 export default function Hero() {
 return (
 <section className="bg-blue-50 py-20 text-center px-4">
-<h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800 shadow-yellow-500">
+<h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800 shadow-yellow-500 animate-pulse ">
 Find Your Dream Job Today
 </h2>
 <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">

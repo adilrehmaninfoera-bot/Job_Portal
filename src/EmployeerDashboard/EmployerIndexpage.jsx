@@ -16,6 +16,8 @@
 
 
 import React from "react";
+// import { Home,Free } from "lucide-react"
+import { Gift, Users,Calendar  } from "lucide-react";
 import EmployerNavbar from "./EmployerNavbar";
 import employerimage from "../assets/Employerimage.jpg"
 import EmployerFooter from "./EmployerFooter";
@@ -27,19 +29,23 @@ const features = [
     title: "Post jobs for free",
     description:
       "Reach millions of qualified candidates with a powerful job posting platform at no cost.",
-    icon: "🆓",
+    // icon: "🆓",
+   icon: <Gift size={50} className="text-cyan-600" />,
+
   },
   {
     title: "Candidate matching",
     description:
       "Get matched with highly qualified candidates to save time and find the right fit fast.",
-    icon: "🤝",
+    // icon: "🤝",
+   icon: <Users size={50} className="text-cyan-600" />,
   },
   {
     title: "Interview scheduling",
     description:
       "Easily manage the interview process and schedule interviews directly through the platform.",
-    icon: "📅",
+    // icon: "📅",
+    icon: <Calendar size={50} className="text-cyan-600" />,
   },
 ];
 
@@ -90,7 +96,7 @@ export default function EmployerLandingPage() {
         </p>
         <a
           href="/post-job"
-          className="inline-block bg-blue-400 text-white px-4 py-2 rounded-lg text-lg font-semibold shadow-lg hover:bg-blue-500 transition"
+          className="inline-block bg-white text-cyan-400 px-4 py-2 rounded-lg text-lg font-semibold shadow-lg hover:bg-gray-200 transition"
         >
           Post a Job for Free
         </a>
@@ -101,14 +107,14 @@ export default function EmployerLandingPage() {
 
       {/* Features Section */}
       <section className="py-20 px-6 max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-12 text-orange-200">
+        <h2 className="text-4xl animate-bounce font-bold mb-12 text-orange-200">
           Why choose JobPortal?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {features.map((feature, idx) => (
             <div
               key={idx}
-              className="bg-cyan-50 rounded-full p-8 flex flex-col items-center"
+              className="bg-cyan-50  transition duration-600 hover:shadow-cyan-800  shadow-lg rounded-full p-8 flex flex-col items-center"
             >
               <div className="text-5xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
@@ -123,8 +129,8 @@ export default function EmployerLandingPage() {
       <section className=" py-14 px-6 text-center">
         <h3 className="text-2xl font-semibold mb-8 text-gray-800">
           Trusted by leading companies
-        </h3>
-        <div className="flex flex-wrap justify-center items-center gap-15 max-w-5xl mx-auto">
+        </h3> 
+        <div className="flex flex-wrap justify-center items-center gap-12 max-w-5xl mx-auto">
           {companies.map(({ name, logo }, idx) => (
             <img
               key={idx}
