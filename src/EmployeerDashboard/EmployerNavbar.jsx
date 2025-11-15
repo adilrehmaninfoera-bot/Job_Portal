@@ -37,7 +37,7 @@ export default function EmployerNavbar() {
           </Link> */}
           <Link
             to="/EmployerDashboardpage"
-            className="bg-blue-400 text-white px-5 py-2 rounded-lg hover:bg-blue-500 transition"
+            className="bg-stone-200 text-cyan-300 px-5 py-2 rounded-lg hover:bg-stone-400 transition"
           >
             Dashboard
           </Link>
