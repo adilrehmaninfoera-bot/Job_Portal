@@ -29,7 +29,6 @@ const features = [
     title: "Post jobs for free",
     description:
       "Reach millions of qualified candidates with a powerful job posting platform at no cost.",
-    // icon: "🆓",
    icon: <Gift size={50} className="text-cyan-600" />,
 
   },
@@ -37,14 +36,13 @@ const features = [
     title: "Candidate matching",
     description:
       "Get matched with highly qualified candidates to save time and find the right fit fast.",
-    // icon: "🤝",
    icon: <Users size={50} className="text-cyan-600" />,
   },
   {
     title: "Interview scheduling",
     description:
       "Easily manage the interview process and schedule interviews directly through the platform.",
-    // icon: "📅",
+    
     icon: <Calendar size={50} className="text-cyan-600" />,
   },
 ];
