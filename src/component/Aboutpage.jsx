@@ -41,7 +41,7 @@ export default function AboutPage() {
             Powered by intelligent search and proprietary hiring data, we simplify and accelerate the recruitment process for both jobseekers and employers. Our goal is to create meaningful connections, enabling candidates to discover the right opportunities and helping organizations find their perfect hires with ease.
           </p>
           <ul className="mb-4 list-disc ml-6 text-gray-800">
-            <li>
+            <li>4
               <span className="font-semibold text-primary">50,000+</span> registered job seekers and growing
             </li>
             <li>

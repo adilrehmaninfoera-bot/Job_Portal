@@ -21,6 +21,7 @@ import Apnavbar from "./component/Apnavbar";
 import EmployerIndexpage from "./EmployeerDashboard/EmployerIndexpage";
 import EmployerNavbar from "./EmployeerDashboard/EmployerNavbar";
 import EmployerDashboardpage from "./EmployeerDashboard/EmployerDashboardpage";
+import EmployerPostjobpage from "./EmployeerDashboard/EmployerPostjobpage";
 
 const router = createBrowserRouter([
   {
@@ -175,6 +176,15 @@ const router = createBrowserRouter([
     element: (
       <div>
         <EmployerDashboardpage />
+      </div>
+    ),
+  },
+
+  {
+    path: "/employerPostjobpage",
+    element: (
+      <div>
+        <EmployerPostjobpage />
       </div>
     ),
   },
