@@ -17,10 +17,10 @@ const menuItems = [
   {
     title: "Smart Sourcing",
     icon: <Search size={20} />,
-    path: "/EmployerPostjobpage",
+    path: "/SmartSourcingPage",
   },
-  { title: "Candidates", icon: <User size={20} />, path: "/candidates" },
-  { title: "Interview", icon: <Calendar size={20} />, path: "/settings" },
+  { title: "Candidates", icon: <User size={20} />, path: "/CandidateApplicationspage" },
+  { title: "Interview", icon: <Calendar size={20} />, path: "/Interviewpage" },
 ];
 
 export default function Dashboard() {

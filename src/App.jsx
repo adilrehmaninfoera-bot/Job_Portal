@@ -1,8 +1,5 @@
 import React from "react";
-// import { BrowserRouter } from 'react-router-dom'
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import Indexpage from "./component/Indexpage";
 import Home from "./component/Home";
 import Login from "./component/Login";
@@ -21,7 +18,9 @@ import Apnavbar from "./component/Apnavbar";
 import EmployerIndexpage from "./EmployeerDashboard/EmployerIndexpage";
 import EmployerNavbar from "./EmployeerDashboard/EmployerNavbar";
 import EmployerDashboardpage from "./EmployeerDashboard/EmployerDashboardpage";
-import EmployerPostjobpage from "./EmployeerDashboard/EmployerPostjobpage";
+import SmartSourcingPage from "./EmployeerDashboard/SmartSourcingPage";
+import CandidateApplications from "./EmployeerDashboard/CandidateApplicationspage";
+import Interviewpage from "./EmployeerDashboard/Interviewpage";
 
 const router = createBrowserRouter([
   {
@@ -150,7 +149,7 @@ const router = createBrowserRouter([
     ),
   },
 
-  //EmployeerPaths.......
+                               //EmployeerPaths.......................................
 
  {
     path: "/employerIndexpage",
@@ -181,10 +180,28 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/employerPostjobpage",
+    path: "/smartsourcingpage",
     element: (
       <div>
-        <EmployerPostjobpage />
+      <SmartSourcingPage/>
+      </div>
+    ),
+  },
+
+   {
+    path: "/candidateapplicationspage",
+    element: (
+      <div>
+       <CandidateApplications/>
+      </div>
+    ),
+  },
+
+  {
+    path: "/interviewpage",
+    element: (
+      <div>
+       <Interviewpage/>
       </div>
     ),
   },

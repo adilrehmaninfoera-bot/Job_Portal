@@ -9,7 +9,10 @@ export default function EmployerNavbar() {
     <header className="bg-cyan-900 shadow-sm sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-3xl font-extrabold text-white tracking-tight">
+        <Link
+          to="/"
+          className="text-3xl font-extrabold text-white tracking-tight"
+        >
           JobPortal Employer
         </Link>
 
@@ -18,12 +21,18 @@ export default function EmployerNavbar() {
           <Link to="/post-job" className="hover:text-blue-400 text-amber-50">
             Post a Job
           </Link>
-          <Link to="/manage-jobs" className="hover:text-blue-400  text-amber-50">
+
+          <Link
+            to="/manage-jobs"
+            className="hover:text-blue-400  text-amber-50"
+          >
             Manage Jobs
           </Link>
+
           <Link to="/candidates" className="hover:text-blue-400  text-amber-50">
             Candidates
           </Link>
+
           {/* <Link to="/pricing" className="hover:text-blue-600">
             Pricing
           </Link> */}
@@ -35,6 +44,7 @@ export default function EmployerNavbar() {
           >
             Login
           </Link> */}
+          
           <Link
             to="/EmployerDashboardpage"
             className="bg-stone-200 text-cyan-300 px-5 py-2 rounded-lg hover:bg-stone-400 transition"
@@ -99,12 +109,10 @@ export default function EmployerNavbar() {
             className="block bg-blue-400 text-white rounded px-5 py-2 text-center hover:bg-blue-500"
             onClick={() => setMenuOpen(false)}
           >
-           Dashboard
+            Dashboard
           </Link>
         </div>
       )}
     </header>
   );
 }
-
-    
